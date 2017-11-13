@@ -2,7 +2,7 @@ package main
 
 import "os"
 
-import "github.com/echobeee/Service-Computing/edit/master/CloudGo/Service"
+import "github.com/echobeee/Service-Computing/tree/master/CloudGo/Service"
 import flag "github.com/spf13/pflag"
 
 

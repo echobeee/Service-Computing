@@ -2,7 +2,7 @@
 -------------------------------
 ## 框架使用
 -------------------------------
-gorilla/mux、codegangsta/negroni、unrolled/render
+[gorilla/mux][1]、[codegangsta/negroni][2]、[unrolled/render][3]
 ## 运行程序
 -------------------------------
 > $ go run ./cloudgo/main.go -p9090
@@ -77,3 +77,7 @@ Percentage of the requests served within a certain time (ms)
 #### 结果分析
 - 吞吐率为1611.78 reqs/s，即每秒处理1611.78个请求
 - 用户平均请求等待时间为0.661 ms 
+
+[1]: https://github.com/gorilla/mux
+[2]: https://github.com/codegangsta/negroni
+[3]: https://github.com/unrolled/render

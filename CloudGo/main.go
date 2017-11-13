@@ -1,14 +1,13 @@
 package main
 
-import (
-	"os"
+import "os"
 
-	"github.com/pmlpml/golang-learning/web/cloudgo/service"
-	flag "github.com/spf13/pflag"
-)
+import "github.com/echobeee/Service-Computing/edit/master/CloudGo/Service"
+import flag "github.com/spf13/pflag"
+
 
 const (
-	PORT string = "8080"
+	PORT string = "3000"
 )
 
 func main() {
@@ -17,11 +16,9 @@ func main() {
 		port = PORT
 	}
 
-	pPort := flag.StringP("port", "p", PORT, "PORT for httpd listening")
+	// Define server port
+	flag.StringVarP(&port, "port", "p", "3000", "define server port")
 	flag.Parse()
-	if len(*pPort) != 0 {
-		port = *pPort
-	}
 
 	server := service.NewServer()
 	server.Run(":" + port)

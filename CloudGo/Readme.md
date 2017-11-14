@@ -51,9 +51,9 @@ Complete requests:      100
 Failed requests:        0
 Total transferred:      14600 bytes
 HTML transferred:       2300 bytes
-Requests per second:    1611.78 [#/sec] (mean)   
-Time per request:       5.824 [ms] (mean)
-Time per request:       0.661 [ms] (mean, across all concurrent requests)
+Requests per second:    1563.51 [#/sec] (mean)   
+Time per request:       5.326 [ms] (mean)
+Time per request:       0.548 [ms] (mean, across all concurrent requests)
 Transfer rate:          215.56 [Kbytes/sec] received
 
 Connection Times (ms)
@@ -75,8 +75,8 @@ Percentage of the requests served within a certain time (ms)
  100%     20 (longest request)
 ```
 #### 结果分析
-- 吞吐率为1611.78 reqs/s，即每秒处理1611.78个请求
-- 用户平均请求等待时间为0.661 ms 
+- 吞吐率为1563.51 reqs/s，即每秒处理1563.51个请求
+- 用户平均请求等待时间为0.548 ms 
 
 [1]: https://github.com/gorilla/mux
 [2]: https://github.com/codegangsta/negroni

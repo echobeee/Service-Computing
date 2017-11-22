@@ -7,7 +7,7 @@
 4. 对 /unknown 给出开发中的提示，返回码 5xx
 ------------------------------------
 ## 实现结果
-1. 访问静态文件
+1.访问静态文件
 ```script
 $ go run main.go
 [negroni] listening on :8080

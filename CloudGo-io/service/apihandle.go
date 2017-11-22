@@ -11,6 +11,6 @@ func InfoHandler(formatter *render.Render) http.HandlerFunc{
 		formatter.JSON(w, http.StatusOK, struct {
 			ID      string
 			Content string
-		}{ID: "0825", Content: "echobee"})
+		}{ID: "echobee", Content: "20"})
 	}
 }
